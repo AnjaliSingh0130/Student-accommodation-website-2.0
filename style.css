@@ -1,0 +1,91 @@
+:root {
+  --brand: #2b6cb0;
+  --brand-dark: #1a4971;
+  --accent: #f6ad55;
+}
+
+body {
+  background-color: #f7f9fc;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.hero {
+  background: linear-gradient(120deg, var(--brand), var(--brand-dark));
+  color: #fff;
+  padding: 48px 0 32px;
+}
+
+.filter-bar {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+.property-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  height: 100%;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.property-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.price-tag {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.rating-badge {
+  background: #ffefd5;
+  color: #b7791f;
+  font-weight: 600;
+}
+
+.gender-badge {
+  font-size: 0.75rem;
+}
+
+.shortlist-btn {
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+#loadingIndicator {
+  display: none;
+}
+
+#loadingIndicator.active {
+  display: flex;
+}
+
+.amenity-badge {
+  background: #eef4ff;
+  color: var(--brand-dark);
+  margin: 2px;
+}
+
+footer {
+  background: var(--brand-dark);
+  color: #e6eefc;
+  padding: 24px 0;
+  margin-top: 60px;
+}
